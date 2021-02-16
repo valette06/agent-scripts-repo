@@ -6,3 +6,10 @@ echo "you are not root you need root access to proscess"
 echo
 exit 1
 fi
+## check number of processors
+
+  if [ `nproc` -eq 1 ]
+  then 
+  echo "this server id very smal"
+  exit 2
+  fi 
